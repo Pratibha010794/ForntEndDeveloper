@@ -1,0 +1,48 @@
+.container{
+    padding: 50px;
+}
+.btn{
+    background: orange;
+    color: white;
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.text-section {
+    padding: 10px;
+    border: 2px solid #d4d4d4;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.list-items {
+    background-color: #e4dfdf;
+    width: 500px;
+    padding: 20px;
+    border: 5px;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.fix-right{
+    float: right;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.spinner{
+    position: absolute;
+    top: 0;
+    background-color: #0000004a;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+img{
+    margin: auto;
+}

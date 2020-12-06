@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>Comments Feed</h1>
+    <div class="comment-feed">
+        <button (click)="resetCommentFeed()" class="btn">Reset comment feed</button>
+    </div>
+    <div>
+        <input [(ngModel)]="searchText" (keyup)="searchComments()" placeholder="Search comments here" class="text-section">
+    </div>
+    <div>
+        <ul class="no-padding">
+            <li *ngFor="let comment of comments" class="list-items">{{comment.text}} <button (click)="deleteComment(comment.id)" class="btn fix-right">Delete</button></li>
+        </ul>
+    </div>
+    <div><input [(ngModel)]="commentText" placeholder="Add Comment" class="text-section"> <button (click)="addComment()" class="btn">Add Comment</button></div>    
+</div>
+<div class="spinner" *ngIf=showLoader><img src="./assets/200.gif"></div>
